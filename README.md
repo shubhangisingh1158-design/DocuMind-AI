@@ -11,7 +11,7 @@ came from.
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.67-FF4B4B?logo=streamlit&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Google%20Gemini-API-4285F4?logo=google&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-vector%20search-0467DF)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 
 ---
 
