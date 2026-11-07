@@ -1,0 +1,72 @@
+# ============================================================
+# Chat With Your PDF - .gitignore
+# Files and folders listed here are ignored by Git.
+# ============================================================
+
+# ---------- SECRETS (most important) ----------
+# Your real API key lives in .env - it must never be shared.
+.env
+.env.local
+.env.*.local
+
+# The template IS meant to be shared, so keep it tracked:
+!.env.example
+
+# ---------- Virtual environment ----------
+# 1.5 GB of rebuildable packages. Never share these.
+venv/
+.venv/
+env/
+ENV/
+
+# ---------- Python cache / compiled files ----------
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+.Python
+
+# ---------- macOS system files ----------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ---------- Packaging / build output ----------
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+
+# ---------- Testing / tooling caches ----------
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ---------- Jupyter / IPython ----------
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ---------- Editors / IDEs ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------- Streamlit ----------
+# Streamlit's secrets file can hold credentials.
+.streamlit/secrets.toml
+
+# ---------- Project-specific ----------
+# Uploaded PDFs and generated vector indexes are data, not code.
+*.faiss
+*.index
+uploads/
